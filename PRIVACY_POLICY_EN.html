@@ -21,7 +21,7 @@
 <h1>Privacy Policy</h1>
 <p class="meta">
   <strong>App:</strong> RouteRisk Weather / Weather risk on your route<br>
-  <strong>Document version:</strong> 2026-08-03<br>
+  <strong>Document version:</strong> 2026-10-04<br>
   <a href="PRIVACY_POLICY.html">Hrvatska verzija (Croatian)</a>
 </p>
 
@@ -37,6 +37,8 @@ account system.</p>
   <li>trip start date or work-planning start date,</li>
   <li>saved work locations,</li>
   <li>manually entered arrival times,</li>
+  <li>trip journal: notes, ratings and photos the user adds to a day journal,</li>
+  <li>the last downloaded forecast and map images, for use without an internet connection,</li>
   <li>basic app settings.</li>
 </ul>
 <p>These data remain in the app's local storage on the device. Deleting the
@@ -53,6 +55,8 @@ app also deletes the locally stored app data.</p>
     search provider; location search text is sent.</li>
   <li><strong>OpenStreetMap tile server</strong> — map tiles are loaded for
     the area viewed by the user.</li>
+  <li><strong>Overpass API (OpenStreetMap)</strong> — only when the user asks for
+    lodging near an overnight stop; the coordinates of that place are sent.</li>
 </ul>
 <p>The app does not send saved routes to the app authors and does not use its
 own server to store these data.</p>
@@ -65,9 +69,17 @@ is not sent to the app author or to any external service, is not stored outside
 the device, and is used only to recognise place names at that moment. The app
 never accesses the gallery on its own — the user selects the image.</p>
 
+<h2>Trip journal</h2>
+<p>A day journal (notes, ratings, arrival time and photos the user picks from
+the gallery) is stored <strong>only on the device</strong>. Photos are copied
+into the app's private folder, resized and without hidden data (EXIF, including
+the location where they were taken). None of it is sent to the app author or to
+external services; a day report or travelogue is sent to others only by the
+user, and only when the user chooses to.</p>
+
 <h2>Plan export and sharing</h2>
-<p>A plan can be exported as a PDF report and shared through the Android system
-share sheet. The user chooses the recipient and the sending app; the app never
+<p>A plan, a day report and a travelogue can be exported and shared through the
+Android system share sheet. The user chooses the recipient and the sending app; the app never
 sends anything on its own and keeps no copy of the report outside the
 device.</p>
 

@@ -21,7 +21,7 @@
 <h1>Pravila privatnosti</h1>
 <p class="meta">
   <strong>Aplikacija:</strong> RouteRisk Weather / Vremenski rizik na tvojoj ruti<br>
-  <strong>Verzija dokumenta:</strong> 03.08.2026.<br>
+  <strong>Verzija dokumenta:</strong> 04.10.2026.<br>
   <a href="PRIVACY_POLICY_EN.html">English version</a>
 </p>
 
@@ -37,6 +37,8 @@ korisnički račun.</p>
   <li>datum polaska ili početni datum pregleda,</li>
   <li>spremljene lokacije za radove,</li>
   <li>ručno unesena vremena dolaska,</li>
+  <li>zapis puta: bilješke, ocjene i fotografije koje korisnik sam doda u zapis dana,</li>
+  <li>zadnju dohvaćenu prognozu i slike karte, za rad bez internetske veze,</li>
   <li>osnovne postavke aplikacije.</li>
 </ul>
 <p>Ti podaci ostaju na uređaju u lokalnoj pohrani aplikacije. Brisanjem
@@ -53,6 +55,8 @@ aplikacije brišu se i lokalno spremljeni podaci.</p>
     pretraga lokacija; šalje se tekst pretrage mjesta.</li>
   <li><strong>OpenStreetMap tile server</strong> — pri prikazu karte učitavaju
     se kartografski tileovi za područje koje korisnik gleda.</li>
+  <li><strong>Overpass API (OpenStreetMap)</strong> — samo kad korisnik zatraži
+    popis smještaja uz noćenje; šalju se koordinate tog mjesta.</li>
 </ul>
 <p>Aplikacija ne šalje spremljene rute autorima aplikacije i ne koristi
 vlastiti poslužitelj za pohranu tih podataka.</p>
@@ -65,8 +69,16 @@ aplikacije ni bilo kojem vanjskom servisu, ne pohranjuje se izvan uređaja i
 koristi se samo za prepoznavanje naziva mjesta u tom trenutku. Aplikacija ne
 pristupa galeriji sama od sebe — sliku bira korisnik.</p>
 
+<h2>Zapis puta</h2>
+<p>Zapis dana (bilješke, ocjene, vrijeme dolaska i fotografije koje korisnik
+sam odabere iz galerije) sprema se <strong>samo na uređaju</strong>.
+Fotografije se kopiraju u privatnu mapu aplikacije, smanjene i bez skrivenih
+podataka (EXIF, uključujući mjesto snimanja). Ništa od toga se ne šalje autoru
+aplikacije ni vanjskim servisima; izvješće dana ili putopis drugima šalje samo
+korisnik, i to samo kad to sam odabere.</p>
+
 <h2>Izvoz i dijeljenje plana</h2>
-<p>Plan se može izvesti kao PDF izvještaj i podijeliti Androidovim sustavnim
+<p>Plan, izvješće dana i putopis mogu se izvesti i podijeliti Androidovim sustavnim
 izbornikom dijeljenja. Primatelja i aplikaciju za slanje bira korisnik;
 aplikacija ništa ne šalje sama od sebe niti zadržava kopiju izvještaja izvan
 uređaja.</p>

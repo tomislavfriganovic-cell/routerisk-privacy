@@ -21,7 +21,7 @@
 <h1>Pravila privatnosti</h1>
 <p class="meta">
   <strong>Aplikacija:</strong> RouteRisk Weather / Vremenski rizik na tvojoj ruti<br>
-  <strong>Verzija dokumenta:</strong> 04.10.2026.<br>
+  <strong>Verzija dokumenta:</strong> 02.11.2026.<br>
   <a href="PRIVACY_POLICY_EN.html">English version</a>
 </p>
 
@@ -52,11 +52,15 @@ aplikacije brišu se i lokalno spremljeni podaci.</p>
   <li><strong>Open-Meteo Geocoding / GeoNames</strong> — šalje se tekst
     pretrage mjesta.</li>
   <li><strong>Nominatim / OpenStreetMap</strong> — koristi se kao rezervna
-    pretraga lokacija; šalje se tekst pretrage mjesta.</li>
+    pretraga lokacija; šalje se tekst pretrage mjesta. Kad korisnik otvori
+    popis smještaja, šalju se i oznake objekata iz karte OpenStreetMap da bi
+    se dobili telefon i stranica tih objekata.</li>
+  <li><strong>Photon (komoot)</strong> — samo kad korisnik otvori popis
+    smještaja uz mjesto; šalju se koordinate tog mjesta.</li>
   <li><strong>OpenStreetMap tile server</strong> — pri prikazu karte učitavaju
     se kartografski tileovi za područje koje korisnik gleda.</li>
-  <li><strong>Overpass API (OpenStreetMap)</strong> — samo kad korisnik zatraži
-    popis smještaja uz noćenje; šalju se koordinate tog mjesta.</li>
+  <li><strong>Overpass API (OpenStreetMap)</strong> — rezervni izvor popisa
+    smještaja kad Photon ne odgovori; šalju se koordinate tog mjesta.</li>
 </ul>
 <p>Aplikacija ne šalje spremljene rute autorima aplikacije i ne koristi
 vlastiti poslužitelj za pohranu tih podataka.</p>

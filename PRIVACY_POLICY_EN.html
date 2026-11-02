@@ -21,7 +21,7 @@
 <h1>Privacy Policy</h1>
 <p class="meta">
   <strong>App:</strong> RouteRisk Weather / Weather risk on your route<br>
-  <strong>Document version:</strong> 2026-10-04<br>
+  <strong>Document version:</strong> 2026-11-02<br>
   <a href="PRIVACY_POLICY.html">Hrvatska verzija (Croatian)</a>
 </p>
 
@@ -52,11 +52,16 @@ app also deletes the locally stored app data.</p>
   <li><strong>Open-Meteo Geocoding / GeoNames</strong> — location search text
     is sent when searching for places.</li>
   <li><strong>Nominatim / OpenStreetMap</strong> — used as a fallback location
-    search provider; location search text is sent.</li>
+    search provider; location search text is sent. When the user opens a
+    lodging list, the OpenStreetMap identifiers of the listed places are also
+    sent to retrieve their phone number and website.</li>
+  <li><strong>Photon (komoot)</strong> — only when the user opens a lodging
+    list near a place; the coordinates of that place are sent.</li>
   <li><strong>OpenStreetMap tile server</strong> — map tiles are loaded for
     the area viewed by the user.</li>
-  <li><strong>Overpass API (OpenStreetMap)</strong> — only when the user asks for
-    lodging near an overnight stop; the coordinates of that place are sent.</li>
+  <li><strong>Overpass API (OpenStreetMap)</strong> — fallback source for the
+    lodging list when Photon does not respond; the coordinates of that place
+    are sent.</li>
 </ul>
 <p>The app does not send saved routes to the app authors and does not use its
 own server to store these data.</p>
